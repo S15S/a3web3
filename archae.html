@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!-- this page created by Carol Buckingham-->
+<!-- setting language for html is a best practice-->
+<html lang="en">
+<head>
+    <!-- call in CSS stylesheet from github repository-->
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Computational Archaeology</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" href = "Images/pin.png" type = "image/x-icon"> <!--from www.flaticon.com for browser tab icon-->
+    <!-- defining character set is a best practice re:HTML validator-->
+    <meta charset= "UTF-8">
+</head>
+<body>
+<!-- this will be the info page about Archaeology and GIS-->
+<!-- Navigation bar from template CB-->
+    <header class="header">
+        <div class="navbar">
+            <a class="nav-logo">SymbioGIS.</a> <!--our created company name appears here-->
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <!-- this is the active page so it will have a different text colour than the other links. it is still clickable!-->
+                    <a href="archae.html" class="active" >Archaeology</a>
+                </li>
+                <li class="nav-item">
+                    <a href="forest.html" class="nav-link">Forestry</a>
+                </li>
+                <li class="nav-item">
+                    <a href="geo.html" class="nav-link">Geography</a>
+                </li>
+                <li class="nav-item">
+                    <a href="urban.html" class="nav-link">Urban Planning</a>
+                </li>
+                <li class="nav-item">
+                    <a href="habitat.html" class="nav-link">Habitat Management</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+<!-- call the js file into page, must go after navigation bar in HTML-->
+<script src="JS/script.js"></script>
+    <!-- banner CSS from (BC)template CB-->
+    <!-- I changed the id to match the image i wanted to use, see CSS for details-->
+    <div class="hero-image" id="archaeology">
+        <div class="hero-text">
+            <!-- set page title and subtitle to match content-->
+            <h1>Archaeology</h1>
+            <p>Using GIS for site mapping and data analysis</p>
+        </div>
+    </div>
+    <!---contentContainer and headlineContainer from template-->
+    <div class="contentContainer">
+        <div class="headlineContainer">
+            <h2>Archaeology and GIS work hand in hand to allow us to view the spatial aspect of human behaviour.</h2>
+        </div>
+        <!---Create a block to hold content of page in two rows with alternating views-->
+        <div class= "archRowContainerA">
+                <div class="archRow">
+                    <div class="image">
+                        <!-- I took this photo in Haldimand County in Southern Ontario-->
+                        <img src="Images/ContentPics/field_photoCB.jpg" alt="A landscape view of a farmer's field, Ontario">
+                    </div>
+                    <!---A block element to hold the text for the given panel, which will sit under the image-->
+                    <div class="mainText">
+                        <h3>Archaeological Assessment</h3>
+                        <!-- blurb about sensitivity/high potential mapping CB-->
+                        <p>Here at SymbioGIS, we use predictive modeling to more accurately determine a location's potential for archaeological excavation. Our team is focused on 
+                            analyzing an area with respect to its cultural, historical, and agricultural relevance, and producing archaeological sensitivity maps based on these 
+                            qualities in conjunction with geospatial information. We also look at the impact of any future excavation and development on cultural land use, wildlife 
+                            populations, and agricultural preservation.</p>
+                    </div>
+                </div>
+        </div>
+        <div class= "archRowContainerB">
+                <!---This element will have the image after the text!!-->
+                <div class="archRow">
+                    <div class="mainText">
+                        <h3>Site Identification</h3>
+                        <!-- blurb about imagery analysis CB-->
+                        <p>Through the use of LiDAR and satelite imagery, possible locations of previous landmarks and buildings are identified. GIS helps us to analyze the areas in which
+                            sites are found to determine why and how the location was chosen and how it differs from contemporary finds. Differences in topography, hydrography, or animal 
+                            populations likely influenced the historic decisions made when choosing a location - these datasets are used within our analysis to help determine area use within a greater
+                            archaeological overview study.</p>
+                    </div>
+                    <div class="image">
+                        <!-- was unable to link directly to image found on wikipedia: https://en.wikipedia.org/wiki/Aerial_archaeology; 
+                            https://en.wikipedia.org/wiki/Aerial_archaeology#/media/File:Grezac.jpg -->
+                        <img src="Images/ContentPics/aerial-archae.jpg" alt="An aerial view of cropmarks at a protohistoric site at Grezac, France. Source: Wikipedia">
+                    </div>
+                </div>
+        </div>
+    </div>
+    <!--HTML for the footer from template - edited by Kira-Marie Lazda dec 7-->
+    <!--structure the footer like a table with one row and three cells - KL-->
+    <div class="footerRow">
+        <div class="footer">
+            <p class="bold">SymbioGIS.</p>
+            <p>Bringing your projects to life.</p>
+            <p>&copy; SymbioGIS. 2021</p> <!--Include copyright symbol - KL -->
+        </div>
+        <div class="footer">
+            <p class="bold">Head Office</p>
+            <p>200 Albert St S</p>
+            <p>Lindsay, Ontario</p>
+        </div>
+        <div class="footer">
+            <p class="bold">Contact Us </p>
+            <p>222-333-4444</p>
+            <p>SymbioGIS.Consulting@gmail.com</p>
+        </div>
+    </div>
+</body>
+</html>
