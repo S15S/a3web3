@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="CSS/style.css">
+        <title>Our Services</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "icon" href = "Images/pin.png" type = "image/x-icon"> <!--from www.flaticon.com for browser tab icon-->
+        <meta charset= "UTF-8">
+    </head>
+    <body>
+        <header class="header">
+            <div class="navbar">
+                <a class="nav-logo">SymbioGIS.</a> 
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="active">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="archae.html" class="nav-link" >Archaeology</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="forest.html" class="nav-link">Forestry</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="geo.html" class="nav-link">Geography</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="urban.html" class="nav-link">Urban Planning</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="habitat.html" class="nav-link">Habitat Management</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </header>
+        <!-- call the js file into html CB-->
+        <script src="JS/script.js"></script>
+        <!-- Banner image-->
+        <div class="hero-image" id="services">
+            <div class="hero-text">
+            <h1>Services</h1>
+            <p> </p>
+            </div>
+        </div>
+        <!---Create a container that will occupy 80% of the webpage where all content except the header/footer will go-->
+        <div class="contentContainer">
+            <!---Create a block to hold the headline of the page-->
+            <div class="headlineContainer">
+                <h2>We provide geospatial and technical services for our clients for resource management and environmental projects </h2>
+            </div>
+            <!---Create a block to hold one panel of content i.e. an image next to some related text-->
+            <div class="panelContainer">
+                <div class="image">
+                    <img src="Images/ContentPics/Arizona.jpg" alt="Arizona Sunset in the Desert">
+                </div>
+                <!---A block element to hold the text for the given panel, which will sit next to the image -->
+                <!-- Add a list after each subject to add interest/ ease to the reader - BC Dec 5-->
+                <div class="mainText">
+                    <h3>GIS and Mapping</h3>
+                    <p>We use GIS in almost everything that we do.  Our diverse team will use GIS analysis and mapping tools to support your project, whatever that may be.
+                        We take pride in our professionality and the quality of the cartographic designs that are produced. Our GIS services include, but are not limited to:
+                    </p>
+                    <ul>
+                        <li>Data Conversion and Integration</li>
+                        <li>Cartographic Mapping</li>
+                        <li>Spatial Data Management</li>
+                    </ul>
+                </div>
+            </div>
+            <!---This panel layout can be repeated as many times as necessary for the content on the page-->
+            <div class="panelContainer">
+                <div class="image">
+                    <img src="Images/ContentPics/survey.jpg" alt="A surveyor taking measurements in a field">
+                </div>
+                <!--Text by SS and BC Dec 6 using this site for inspiration: https://www.caslys.ca/services/-->
+                <div class="mainText">
+                    <h3>Remote Sensing</h3>
+                    <p>The use of satellite and aerial imagery has opened up many avenues for landscape information. We make sure to keep our landscape imagery up-to-date by regularly 
+                        applying medium and high-resolution multispectral imagery to map the landscape. We provide cost-effective data solutions to help support your project. Our Remote
+                        Sensing services include the following, and more:
+                    </p>
+                    <ul>
+                        <li>Ecological Land Classificatin (ELC) </li>
+                        <li>Image Processing </li>
+                        <li>Change Detection</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="panelContainer">
+                <div class="image">
+                    <img src="Images/ContentPics/datamap.jpg" alt="A map of data">
+                </div>
+                <div class="mainText">
+                    <h3>Data Analysis</h3>
+                    <p>We are here to elevate and support projects and business objectives, providing our teams strength in geospatial analysis and data management. Our team's diversity
+                        allows us to have a wide range of experience when working with dattsets and different information sources. Our Data Analysis services include, but are not limited to:
+                    </p>
+                    <ul>
+                        <li>Environmental Impact Assessments (EIA)</li>
+                        <li>Land Use Assessment</li>
+                        <li>Wildlife Habitat Mapping and Movement Analysis</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="panelContainer greenPanel">
+                    Here at SymbioGIS we have a well rounded team who are ready to help clients from many different sectors.
+                    We have partnered with various industry leaders including those in: Business Mapping, Community Development, Enterprise GIS, Health Care Mapping, Location Intelligence, Territory Mapping and many more.   
+                    Check out all of our areas of expertise to see how we can help your team!    
+                </div>
+                <!-- HTML for the button w/ links to each area of expertise by SS and BC Dec 6 using https://www.w3schools.com/tags/tag_button.asp-->
+                <div class= "service-buttons">   
+                    <a href="archae.html" class="button serviceButton">Archaeology</a>
+                    <a href="forest.html" class="button serviceButton">Forestry</a>
+                    <a href="geo.html" class="button serviceButton">Geography</a>
+                    <a href="urban.html" class="button serviceButton">Urban Planning</a>
+                    <a href="habitat.html" class="button serviceButton">Habitat Management</a>
+                </div>
+            </div>
+        </div>    
+        <!--HTML for the footer -KS nov 25 and Kira dec 7-->
+        <!--structure the footer like a table with one row and three cells - Kira-->
+        <div class="footerRow">
+            <div class="footer">
+                <p class="bold">SymbioGIS.</p>
+                <p>Bringing your projects to life.</p>
+                <p>&copy; SymbioGIS. 2021</p> <!--Include copyright symbol - Kira -->
+            </div>
+            <div class="footer">
+                <p class="bold">Head Office</p>
+                <p>200 Albert St S</p>
+                <p>Lindsay, Ontario</p>
+            </div>
+            <div class="footer">
+                <p class="bold">Contact Us </p>
+                <p>222-333-4444</p>
+                <p>SymbioGIS.Consulting@gmail.com</p>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+

@@ -1,1 +1,128 @@
-# this is a test 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>GIS Consulting @ SymbioGIS.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Nov 24 CB: define character set as best practice re:HTML validator-->
+    <meta charset= "UTF-8">
+    <link rel = "icon" href = "Images/pin.png" type = "image/x-icon"> <!--from www.flaticon.com for browser tab icon-->
+</head>
+<body>
+<!-- Nov 24 CB: input language for HTML as best practice re:HTML validator-->
+    <!--@Steph: I was using this website for the general structure we're after and they have css too https://www.w3docs.com/snippets/css/how-to-vertically-align-text-next-to-an-image.html-->
+    <!-- Nov 24 CB - adding a navbar! I've included this above the banner-->
+    <!-- create a header for the navigation bar-->
+    <header class="header">
+        <div class="navbar">
+            <a class="nav-logo">SymbioGIS.</a> <!--here is our created company name!-->
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="archae.html" class="nav-link">Archaeology</a>
+                </li>
+                <li class="nav-item">
+                    <a href="forest.html" class="nav-link">Forestry</a>
+                </li>
+                <li class="nav-item">
+                    <a href="geo.html" class="nav-link">Geography</a>
+                </li>
+                <li class="nav-item">
+                    <a href="urban.html" class="nav-link">Urban Planning</a>
+                </li>
+                <li class="nav-item">
+                    <a href="habitat.html" class="nav-link">Habitat Management</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+    <script src="JS/script.js"></script>
+
+    <!-- Nov 24 BC - Inserting the "banner" - this should be after the navbar and before the rest of the page. Since we are using it as a title/ subtitle we do not need that stuff to be included-->
+    <div class="hero-image" id="home">
+        <div class="hero-text">
+            <h1>SymbioGIS.</h1>
+            <p>Providing top-tier GIS services since 2021</p>
+        </div>
+    </div>
+    <div class="blurbs">
+        <h1>SymbioGIS is a world class GIS consulting group made up of experts from a variety of backgrounds, allowing us to better serve
+            you and your GIS project needs. We strive to bring our clients' goals to fruition, whether that includes cartographic products, spatial analytics and everything in between. </h1>
+    </div>
+    <!--this is the blurb for summarizing the service that we offer, will come before the overlay with link to the main services page Ks-->
+    <!--https://thenounproject.com/icons/ reference for the icons used. Alll under creative commons license-->
+    <div class ="servicesblurb">
+        <div class = "sblurbtext">
+            <h2>How can we help you?</h2>
+            <p> The diversity of educational and practical backgrounds puts SymbioGIS in a position to provide our 
+                services to a wide range of projects. Regardless of the project being presented to us there are some main services that we can 
+                guarantee to all clients that work with SymbioGIS
+            </p>
+        </div>
+        <div class = "servicesummary">
+            <div class="eachservice">
+                <img src ="Images/ContentPics/datamanagement.jpg" class="icon"  alt = "an icon representing data management"> 
+                <p class="caption"> Data Management </p>
+            </div>
+            <div>
+                <img src ="Images/ContentPics/SA.jpg" class="icon"  alt = "an icom representing spatial analysis"> 
+                <p class="caption"> Spatial Analysis & Remote Sensing </p>
+            </div>
+            <div>
+                <img src ="Images/ContentPics/cart.jpg" class="icon"  alt = "an icon representing mapping process"> 
+                <p class="caption"> Mapping using GIS Softwares</p>
+            </div>
+    </div>
+    </div>
+    <div class="homebanners">
+        <img src="Images/Banner/map.jpg" alt="road map" class="imgbanner">
+        <div class="overlay">
+            <a href="services.html" class="bannertext" >Let's work together.</a>
+        </div>
+    </div>
+    <div class="blurbs" id="meet">
+        <h1>Meet with us! </h1>
+        <h2>Our head office is located in Lindsay, Ontario, Canada. </h2>
+        <h2>Most of our employees received training through Fleming College's world-renowned 
+            GIS Applications Specialist and Cartography programs, right here in Lindsay. We would love to show you around! </h2>
+    </div>
+    <!--I used this tutorial to embed the map of Lindsay onto our site: https://wiki.openstreetmap.org/wiki/Export#Embeddable_HTML-->
+    <iframe title='Map of Lindsay, ON' class="map" src="https://www.openstreetmap.org/export/embed.html?bbox=-78.79051208496095%2C44.32869874401131%2C-78.67721557617188%2C44.38282710396294&amp;layer=hot&amp;marker=44.35576917384144%2C-78.7338638305664"></iframe>
+    
+    <!--HTML for the footer -KS nov 25 and Kira dec 7-->
+    <!--structure the footer like a table with one row and three cells - Kira-->
+    <div class="footerRow">
+        <div class="footer">
+            <p class="bold">SymbioGIS.</p>
+            <p>Bringing your projects to life.</p>
+            <p>&copy; SymbioGIS. 2021</p> <!--Include copyright symbol - Kira -->
+        </div>
+        <div class="footer">
+            <p class="bold">Head Office</p>
+            <p>200 Albert St S</p>
+            <p>Lindsay, Ontario</p>
+        </div>
+        <div class="footer">
+            <p class="bold">Contact Us </p>
+            <p>222-333-4444</p>
+            <p>SymbioGIS.Consulting@gmail.com</p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
